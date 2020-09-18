@@ -61,7 +61,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "RemoveRowsOnEmpty",
       "params": {
         "columns": [
@@ -75,7 +75,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "ColumnRenamer",
       "params": {
         "renamings": [
@@ -98,7 +98,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "FillEmptyWithValue",
       "params": {
         "columns": [
@@ -119,14 +119,14 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "DateParser",
       "params": {
         "formats": [
           "M/dd"
         ],
         "columns": [
-          "Appointment date"
+          "Appointment_date"
         ],
         "timezone_id": "UTC",
         "appliesTo": "SINGLE_COLUMN",
@@ -137,22 +137,48 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
-        "expression": "",
-        "column": "Cost/mtg"
+        "expression": "Cost / n_mtg",
+        "column": "Cost_of_mtg"
       },
       "alwaysShowComment": false
     },
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
-      "type": "CreateColumnWithGREL",
+      "disabled": false,
+      "type": "FindReplace",
       "params": {
-        "expression": "Cost / Cost_of_mtg",
-        "column": "Cost_of_mtg"
+        "output": "",
+        "mapping": [
+          {
+            "from": "NaN",
+            "to": "0"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "Cost_of_mtg"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "m to a days"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
       },
       "alwaysShowComment": false
     }
