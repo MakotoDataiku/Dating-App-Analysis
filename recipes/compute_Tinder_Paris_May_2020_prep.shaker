@@ -26,8 +26,39 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "col_21",
+          "col_22",
+          "col_23",
+          "col_24",
+          "col_25",
+          "col_26",
+          "col_27",
+          "col_28",
+          "Date_1",
+          "Weekday",
+          "# of Swipe",
+          "Boost",
+          "# of Liked",
+          "Match_1"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +66,43 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Appointment": 100,
+    "Match_1": 100,
+    "Cost/mtg": 100,
+    "Conversation": 105,
+    "Cost": 100,
+    "Name": 100,
+    "Match": 100,
+    "# of Liked": 100,
+    "Weekday": 100,
+    "Boost": 100,
+    "Date_1": 100,
+    "SL": 100,
+    "col_27": 100,
+    "col_28": 100,
+    "# of mtg": 100,
+    "col_25": 100,
+    "col_26": 100,
+    "Age": 100,
+    "col_23": 100,
+    "col_24": 100,
+    "col_21": 100,
+    "col_22": 100,
+    "Happy": 100,
+    "Lv": 100,
+    "No.": 100,
+    "Hand": 100,
+    "Date": 100,
+    "Who liked first": 128,
+    "Ethnicity": 100,
+    "# of Swipe": 100,
+    "Reply": 100,
+    "m to a days": 100,
+    "Appointment date": 135,
+    "Week": 100,
+    "Kiss": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
