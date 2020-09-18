@@ -3,7 +3,7 @@
     "mode": "ALL"
   },
   "explorationSampling": {
-    "_refreshTrigger": 4,
+    "_refreshTrigger": 5,
     "selection": {
       "filter": {
         "distinct": false,
