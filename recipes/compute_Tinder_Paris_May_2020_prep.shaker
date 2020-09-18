@@ -61,7 +61,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "RemoveRowsOnEmpty",
       "params": {
         "columns": [
@@ -75,7 +75,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "ColumnRenamer",
       "params": {
         "renamings": [
@@ -98,7 +98,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "FillEmptyWithValue",
       "params": {
         "columns": [
@@ -119,7 +119,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "DateParser",
       "params": {
         "formats": [
@@ -137,7 +137,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "",
@@ -148,7 +148,7 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": false,
+      "disabled": true,
       "type": "CreateColumnWithGREL",
       "params": {
         "expression": "Cost / Cost_of_mtg",
