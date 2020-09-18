@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600458334326
+    "lastModifiedOn": 1600459419254
   },
   "creationTag": {
     "versionNumber": 0,
@@ -155,16 +155,16 @@
         "type": "double"
       },
       {
-        "name": "# of mtg",
+        "name": "n_mtg",
         "type": "bigint"
       },
       {
-        "name": "Cost/mtg",
+        "name": "Cost_of_mtg",
         "type": "double"
       },
       {
-        "name": "Appointment date",
-        "type": "string"
+        "name": "Appointment_date",
+        "type": "date"
       },
       {
         "name": "m to a days",
