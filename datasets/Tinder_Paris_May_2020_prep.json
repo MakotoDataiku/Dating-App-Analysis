@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600458288274
+    "lastModifiedOn": 1600458334326
   },
   "creationTag": {
     "versionNumber": 0,
@@ -168,62 +168,6 @@
       },
       {
         "name": "m to a days",
-        "type": "bigint"
-      },
-      {
-        "name": "col_21",
-        "type": "string"
-      },
-      {
-        "name": "col_22",
-        "type": "string"
-      },
-      {
-        "name": "col_23",
-        "type": "string"
-      },
-      {
-        "name": "col_24",
-        "type": "string"
-      },
-      {
-        "name": "col_25",
-        "type": "string"
-      },
-      {
-        "name": "col_26",
-        "type": "string"
-      },
-      {
-        "name": "col_27",
-        "type": "string"
-      },
-      {
-        "name": "col_28",
-        "type": "string"
-      },
-      {
-        "name": "Date_1",
-        "type": "string"
-      },
-      {
-        "name": "Weekday",
-        "type": "string"
-      },
-      {
-        "name": "# of Swipe",
-        "type": "bigint"
-      },
-      {
-        "name": "Boost",
-        "type": "string"
-      },
-      {
-        "name": "# of Liked",
-        "type": "bigint"
-      },
-      {
-        "name": "Match_1",
         "type": "bigint"
       }
     ],
