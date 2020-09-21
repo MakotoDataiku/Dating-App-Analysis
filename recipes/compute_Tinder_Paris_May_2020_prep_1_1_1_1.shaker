@@ -34,40 +34,10 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
+      "disabled": false,
       "type": "ColumnsSelector",
       "params": {
         "columns": [
-          "col_21",
-          "col_22",
-          "col_23",
-          "col_24",
-          "col_25",
-          "col_26",
-          "col_27",
-          "col_28",
-          "Date_1",
-          "Weekday",
-          "# of Swipe",
-          "Boost",
-          "# of Liked",
-          "Match_1"
-        ],
-        "keep": false,
-        "appliesTo": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": true,
-      "type": "ColumnsSelector",
-      "params": {
-        "columns": [
-          "col_22",
-          "col_23",
-          "col_24",
           "col_25",
           "col_26",
           "col_27",
@@ -78,7 +48,14 @@
           "# of Swipe",
           "Boost",
           "# of Liked",
-          "Match_1"
+          "Match_1",
+          "col_18",
+          "col_19",
+          "col_20",
+          "col_21",
+          "col_22",
+          "col_23",
+          "col_24"
         ],
         "keep": false,
         "appliesTo": "COLUMNS"
@@ -206,26 +183,6 @@
         ],
         "appliesTo": "SINGLE_COLUMN",
         "value": "0"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnsSelector",
-      "params": {
-        "columns": [
-          "col_18",
-          "col_19",
-          "col_20",
-          "col_21",
-          "col_22",
-          "col_23",
-          "col_24"
-        ],
-        "keep": false,
-        "appliesTo": "COLUMNS"
       },
       "alwaysShowComment": false
     }

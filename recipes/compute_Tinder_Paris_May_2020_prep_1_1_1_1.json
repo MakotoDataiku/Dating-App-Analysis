@@ -20,6 +20,9 @@
             },
             "Hinge_Paris_Feb_2020": {
               "repartition": 10
+            },
+            "Bumble_Paris_Aug_2020": {
+              "repartition": 10
             }
           }
         },
@@ -78,11 +81,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600682375128
+    "lastModifiedOn": 1600682534265
   },
   "creationTag": {
     "versionNumber": 0,
