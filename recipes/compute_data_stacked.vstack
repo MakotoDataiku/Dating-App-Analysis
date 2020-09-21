@@ -1,7 +1,6 @@
 {
   "mode": "UNION",
   "selectedColumns": [
-    "No.",
     "Name",
     "Ethnicity",
     "Week",
@@ -107,10 +106,6 @@
     "$status": {
       "schema": {
         "columns": [
-          {
-            "name": "No.",
-            "type": "bigint"
-          },
           {
             "name": "Name",
             "type": "string"
