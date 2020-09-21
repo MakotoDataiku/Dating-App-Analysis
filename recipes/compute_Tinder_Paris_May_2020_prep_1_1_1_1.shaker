@@ -182,6 +182,28 @@
         "value": "0"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"Bumble\"",
+        "column": "App"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"Paris\"",
+        "column": "City"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -202,6 +224,7 @@
     "Ha": 100,
     "Conver": 100,
     "Lv": 100,
+    "City": 100,
     "Hand": 100,
     "# of Swipe": 100,
     "Appointment date": 135,
