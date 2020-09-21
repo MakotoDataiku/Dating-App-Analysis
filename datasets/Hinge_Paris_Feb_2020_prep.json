@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600682128313
+    "lastModifiedOn": 1600682204717
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,18 +103,6 @@
         "type": "bigint"
       },
       {
-        "name": "Who liked first",
-        "type": "string"
-      },
-      {
-        "name": "Lv",
-        "type": "bigint"
-      },
-      {
-        "name": "SL",
-        "type": "string"
-      },
-      {
         "name": "Date",
         "type": "string"
       },
@@ -132,10 +120,6 @@
       },
       {
         "name": "Conversation",
-        "type": "bigint"
-      },
-      {
-        "name": "Flirt",
         "type": "bigint"
       },
       {
