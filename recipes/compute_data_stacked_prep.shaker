@@ -26,8 +26,105 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"2020/\" + Date",
+        "column": "Date"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "Date_parsed",
+        "formats": [
+          "yyyy/MM/dd"
+        ],
+        "columns": [
+          "Date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "matched_month",
+        "outHourColumn": "",
+        "outYearColumn": "matched_year",
+        "column": "Date_parsed",
+        "outDayOfWeekColumn": "matched_day_of_week",
+        "timezone_id": "UTC",
+        "outDayColumn": "matched_day",
+        "outWeekOfYearColumn": "matched_week_of_year"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "appt_month",
+        "outYearColumn": "appt_year",
+        "column": "Appointment_date",
+        "outDayOfWeekColumn": "appt_day_of_week",
+        "timezone_id": "UTC",
+        "outDayColumn": "appt_day"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "since_Appointment_date_days",
+        "input2": "Date_parsed",
+        "outputUnit": "DAYS",
+        "input1": "Appointment_date",
+        "compareTo": "COLUMN",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Appointment_date",
+          "Date_parsed",
+          "Date"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +132,50 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Appointment": 100,
+    "App": 100,
+    "year": 100,
+    "matched_day_of_week": 158,
+    "Flirt": 100,
+    "matched_year": 105,
+    "since_Appointment_date_days": 218,
+    "Conversation": 105,
+    "matched_week_of_year": 165,
+    "Cost": 100,
+    "Name": 100,
+    "Match": 100,
+    "appt_day_of_week": 135,
+    "Date_parsed_day": 128,
+    "Date_parsed_year": 135,
+    "Cost_of_mtg": 100,
+    "Appointment_date_year": 173,
+    "appt_year": 100,
+    "SL": 183,
+    "matched_day": 100,
+    "Age": 100,
+    "appt_month": 100,
+    "matched_month": 113,
+    "Appointment_date_day": 165,
+    "Happy": 100,
+    "Appointment_date": 135,
+    "Date_parsed": 183,
+    "Lv": 100,
+    "appt_day": 100,
+    "City": 100,
+    "Hand": 100,
+    "Date": 100,
+    "Who liked first": 128,
+    "Ethnicity": 113,
+    "Appointment_date_month": 180,
+    "month": 100,
+    "n_mtg": 100,
+    "Reply": 100,
+    "m to a days": 100,
+    "Date_parsed_month": 143,
+    "Week": 100,
+    "Kiss": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
