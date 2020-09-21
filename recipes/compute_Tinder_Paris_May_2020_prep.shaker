@@ -169,7 +169,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "FillEmptyWithValue",
@@ -179,6 +179,28 @@
         ],
         "appliesTo": "SINGLE_COLUMN",
         "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"Tinder\"",
+        "column": "App"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"Paris\"",
+        "column": "City"
       },
       "alwaysShowComment": false
     }
@@ -222,6 +244,7 @@
     "Conver": 100,
     "Appointment_date": 135,
     "Lv": 100,
+    "City": 100,
     "No.": 100,
     "Hand": 100,
     "Date": 100,
