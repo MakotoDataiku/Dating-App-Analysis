@@ -209,6 +209,28 @@
         "value": "0"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"Tinder\"",
+        "column": "App"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"Lille\"",
+        "column": "City"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -252,6 +274,7 @@
     "Conver": 100,
     "Appointment_date": 135,
     "Lv": 100,
+    "City": 100,
     "No.": 100,
     "Hand": 100,
     "Date": 100,
