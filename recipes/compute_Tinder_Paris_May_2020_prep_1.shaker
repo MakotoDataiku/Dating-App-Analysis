@@ -148,10 +148,21 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"2020/\" + Appointment_date",
+        "column": "Appointment_date"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
       "type": "DateParser",
       "params": {
         "formats": [
-          "M/dd"
+          "yyyy/M/dd"
         ],
         "columns": [
           "Appointment_date"
@@ -222,7 +233,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
