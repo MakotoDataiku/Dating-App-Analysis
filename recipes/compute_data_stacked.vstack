@@ -104,6 +104,109 @@
     }
   ],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "No.",
+            "type": "bigint"
+          },
+          {
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "name": "Ethnicity",
+            "type": "string"
+          },
+          {
+            "name": "Week",
+            "type": "bigint"
+          },
+          {
+            "name": "Who liked first",
+            "type": "string"
+          },
+          {
+            "name": "Lv",
+            "type": "bigint"
+          },
+          {
+            "name": "SL",
+            "type": "string"
+          },
+          {
+            "name": "Date",
+            "type": "string"
+          },
+          {
+            "name": "Age",
+            "type": "bigint"
+          },
+          {
+            "name": "Match",
+            "type": "bigint"
+          },
+          {
+            "name": "Reply",
+            "type": "bigint"
+          },
+          {
+            "name": "Conversation",
+            "type": "bigint"
+          },
+          {
+            "name": "Appointment",
+            "type": "bigint"
+          },
+          {
+            "name": "Hand",
+            "type": "bigint"
+          },
+          {
+            "name": "Kiss",
+            "type": "bigint"
+          },
+          {
+            "name": "Happy",
+            "type": "bigint"
+          },
+          {
+            "name": "Cost",
+            "type": "double"
+          },
+          {
+            "name": "n_mtg",
+            "type": "bigint"
+          },
+          {
+            "name": "Cost_of_mtg",
+            "type": "double"
+          },
+          {
+            "name": "Appointment_date",
+            "type": "date"
+          },
+          {
+            "name": "m to a days",
+            "type": "bigint"
+          },
+          {
+            "name": "App",
+            "type": "string"
+          },
+          {
+            "name": "City",
+            "type": "string"
+          },
+          {
+            "name": "Flirt",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
