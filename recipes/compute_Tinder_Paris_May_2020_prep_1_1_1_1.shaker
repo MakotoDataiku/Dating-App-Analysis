@@ -150,24 +150,6 @@
     {
       "preview": false,
       "metaType": "PROCESSOR",
-      "disabled": true,
-      "type": "DateParser",
-      "params": {
-        "formats": [
-          "M/dd"
-        ],
-        "columns": [
-          "Appointment_date"
-        ],
-        "timezone_id": "UTC",
-        "appliesTo": "SINGLE_COLUMN",
-        "lang": "auto"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
