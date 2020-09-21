@@ -17,6 +17,9 @@
             },
             "Tinder_Lille_Aug_2020": {
               "repartition": 10
+            },
+            "Hinge_Paris_Feb_2020": {
+              "repartition": 10
             }
           }
         },
@@ -75,11 +78,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600682128316
+    "lastModifiedOn": 1600682204805
   },
   "creationTag": {
     "versionNumber": 0,
