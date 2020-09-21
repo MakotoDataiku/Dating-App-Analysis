@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600683491291
+    "lastModifiedOn": 1600684303103
   },
   "creationTag": {
     "versionNumber": 0,
@@ -111,8 +111,24 @@
         "type": "string"
       },
       {
-        "name": "Date",
-        "type": "string"
+        "name": "matched_year",
+        "type": "bigint"
+      },
+      {
+        "name": "matched_month",
+        "type": "bigint"
+      },
+      {
+        "name": "matched_week_of_year",
+        "type": "bigint"
+      },
+      {
+        "name": "matched_day",
+        "type": "bigint"
+      },
+      {
+        "name": "matched_day_of_week",
+        "type": "bigint"
       },
       {
         "name": "Age",
@@ -159,8 +175,24 @@
         "type": "double"
       },
       {
-        "name": "Appointment_date",
-        "type": "date"
+        "name": "since_Appointment_date_days",
+        "type": "bigint"
+      },
+      {
+        "name": "appt_year",
+        "type": "bigint"
+      },
+      {
+        "name": "appt_month",
+        "type": "bigint"
+      },
+      {
+        "name": "appt_day",
+        "type": "bigint"
+      },
+      {
+        "name": "appt_day_of_week",
+        "type": "bigint"
       },
       {
         "name": "m to a days",
