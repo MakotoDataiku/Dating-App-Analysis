@@ -136,7 +136,8 @@
           "Conversation",
           "Reply",
           "Cost",
-          "n_mtg"
+          "n_mtg",
+          "Flirt"
         ],
         "appliesTo": "COLUMNS",
         "value": "0"

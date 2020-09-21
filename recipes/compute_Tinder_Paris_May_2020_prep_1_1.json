@@ -14,6 +14,9 @@
             },
             "Tinder_Zagreb_Aug": {
               "repartition": 10
+            },
+            "Tinder_Lille_Aug_2020": {
+              "repartition": 10
             }
           }
         },
@@ -72,11 +75,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600681920799
+    "lastModifiedOn": 1600681992288
   },
   "creationTag": {
     "versionNumber": 0,
