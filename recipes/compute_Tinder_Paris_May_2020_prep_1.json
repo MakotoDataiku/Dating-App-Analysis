@@ -11,6 +11,9 @@
           "map": {
             "Tinder_Paris_May_2020": {
               "repartition": 10
+            },
+            "Tinder_Zagreb_Aug": {
+              "repartition": 10
             }
           }
         },
@@ -69,11 +72,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600681401089
+    "lastModifiedOn": 1600681684601
   },
   "creationTag": {
     "versionNumber": 0,
