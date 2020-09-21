@@ -1297,7 +1297,7 @@
           }
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "decision_tree_regression": {
       "max_depth": {
@@ -1957,7 +1957,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": false
+      "enabled": true
     },
     "deep_learning_sparkling": {
       "enabled": false,
