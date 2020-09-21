@@ -122,6 +122,8 @@
   },
   "name": "Dating app analysis",
   "projectStatus": "Sandbox",
+  "imgPattern": 7,
+  "showInitials": false,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -175,6 +177,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1600685469730
   },
   "creationTag": {
     "versionNumber": 0,
