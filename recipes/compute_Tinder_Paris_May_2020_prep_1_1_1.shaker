@@ -147,6 +147,35 @@
       "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "\"2020/\" + Appointment_date",
+        "column": "Appointment_date"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "formats": [
+          "yyyy/M/dd"
+        ],
+        "columns": [
+          "Appointment_date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": true,
       "type": "DateParser",
       "params": {
         "formats": [
@@ -242,7 +271,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "CreateColumnWithGREL",
