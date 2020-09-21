@@ -65,7 +65,7 @@
       "type": "RemoveRowsOnEmpty",
       "params": {
         "columns": [
-          "No."
+          "Name"
         ],
         "keep": false,
         "appliesTo": "SINGLE_COLUMN"
