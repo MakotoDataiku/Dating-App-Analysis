@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600681684528
+    "lastModifiedOn": 1600682725355
   },
   "creationTag": {
     "versionNumber": 0,
@@ -173,6 +173,14 @@
       {
         "name": "m to a days",
         "type": "bigint"
+      },
+      {
+        "name": "App",
+        "type": "string"
+      },
+      {
+        "name": "City",
+        "type": "string"
       }
     ],
     "userModified": true
