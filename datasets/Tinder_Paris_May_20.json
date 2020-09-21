@@ -26,7 +26,7 @@
     "xlsx": true,
     "preserveNumberFormatting": false,
     "parseDatesToISO": false,
-    "skipRowsBeforeHeader": 0,
+    "skipRowsBeforeHeader": 4,
     "parseHeaderRow": true,
     "skipRowsAfterHeader": 0,
     "sheets": "*Tinder (Paris 20\u0027 May)"
@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600681747965
+    "lastModifiedOn": 1600681790705
   },
   "creationTag": {
     "versionNumber": 0,
@@ -66,87 +66,87 @@
   "schema": {
     "columns": [
       {
-        "name": "col_0",
+        "name": "No.",
         "type": "string"
       },
       {
-        "name": "col_1",
+        "name": "Name",
         "type": "string"
       },
       {
-        "name": "Me",
+        "name": "Ethnicity",
         "type": "string"
       },
       {
-        "name": "32yrs",
+        "name": "Week",
         "type": "string"
       },
       {
-        "name": "col_4",
+        "name": "Who liked first",
         "type": "string"
       },
       {
-        "name": "col_5",
+        "name": "Lv",
         "type": "string"
       },
       {
-        "name": "col_6",
+        "name": "SL",
         "type": "string"
       },
       {
-        "name": "# of Swipe",
+        "name": "Date",
         "type": "string"
       },
       {
-        "name": "16314",
+        "name": "Age",
         "type": "string"
       },
       {
-        "name": "col_9",
+        "name": "Match",
         "type": "string"
       },
       {
-        "name": "col_10",
+        "name": "Reply",
         "type": "string"
       },
       {
-        "name": "col_11",
+        "name": "Conversation",
         "type": "string"
       },
       {
-        "name": "col_12",
+        "name": "Appointment",
         "type": "string"
       },
       {
-        "name": "col_13",
+        "name": "Hand",
         "type": "string"
       },
       {
-        "name": "col_14",
+        "name": "Kiss",
         "type": "string"
       },
       {
-        "name": "col_15",
+        "name": "Happy",
         "type": "string"
       },
       {
-        "name": "col_16",
+        "name": "Cost",
         "type": "string"
       },
       {
-        "name": "col_17",
+        "name": "# of mtg",
         "type": "string"
       },
       {
-        "name": "col_18",
+        "name": "Cost/mtg",
         "type": "string"
       },
       {
-        "name": "col_19",
+        "name": "Appointment date",
         "type": "string"
       },
       {
-        "name": "col_20",
+        "name": "m to a days",
         "type": "string"
       },
       {
@@ -182,31 +182,27 @@
         "type": "string"
       },
       {
-        "name": "col_29",
+        "name": "Date_1",
         "type": "string"
       },
       {
-        "name": "col_30",
+        "name": "Weekday",
         "type": "string"
       },
       {
-        "name": "col_31",
+        "name": "# of Swipe",
         "type": "string"
       },
       {
-        "name": "col_32",
+        "name": "Boost",
         "type": "string"
       },
       {
-        "name": "col_33",
+        "name": "# of Liked",
         "type": "string"
       },
       {
-        "name": "col_34",
-        "type": "string"
-      },
-      {
-        "name": "col_35",
+        "name": "Match_1",
         "type": "string"
       }
     ],
