@@ -1,0 +1,247 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 5,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "col_21",
+          "col_22",
+          "col_23",
+          "col_24",
+          "col_25",
+          "col_26",
+          "col_27",
+          "col_28",
+          "Date_1",
+          "Weekday",
+          "# of Swipe",
+          "Boost",
+          "# of Liked",
+          "Match_1"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
+      "params": {
+        "columns": [
+          "No."
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "# of mtg",
+            "to": "n_mtg"
+          },
+          {
+            "from": "Cost/mtg",
+            "to": "Cost_of_mtg"
+          },
+          {
+            "from": "Appointment date",
+            "to": "Appointment_date"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "Kiss",
+          "Happy",
+          "Hand",
+          "Appointment",
+          "Conversation",
+          "Reply",
+          "Cost",
+          "n_mtg"
+        ],
+        "appliesTo": "COLUMNS",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "formats": [
+          "M/dd"
+        ],
+        "columns": [
+          "Appointment_date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "Cost / n_mtg",
+        "column": "Cost_of_mtg"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "NaN",
+            "to": "0"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "Cost_of_mtg"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FillEmptyWithValue",
+      "params": {
+        "columns": [
+          "m to a days"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "value": "0"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Appointment": 100,
+    "Match_1": 100,
+    "App": 100,
+    "Cost/mtg": 100,
+    "Conversation": 105,
+    "kiss": 100,
+    "Cost": 100,
+    "Name": 100,
+    "Match": 100,
+    "# of Liked": 100,
+    "Weekday": 100,
+    "Boost": 100,
+    "Date_1": 100,
+    "Cost_of_mtg": 100,
+    "SL": 100,
+    "Ha": 100,
+    "col_27": 100,
+    "col_28": 100,
+    "# of mtg": 100,
+    "col_25": 100,
+    "col_26": 100,
+    "Age": 100,
+    "col_23": 100,
+    "ki": 100,
+    "col_24": 100,
+    "col_21": 100,
+    "col_22": 100,
+    "Happy": 100,
+    "Conver": 100,
+    "Appointment_date": 135,
+    "Lv": 100,
+    "No.": 100,
+    "Hand": 100,
+    "Date": 100,
+    "Who liked first": 128,
+    "Ethnicity": 100,
+    "# of Swipe": 100,
+    "Han": 100,
+    "n_mtg": 100,
+    "Reply": 100,
+    "m to a days": 100,
+    "Appoin": 100,
+    "Appointment date": 135,
+    "Week": 100,
+    "Kiss": 100
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
