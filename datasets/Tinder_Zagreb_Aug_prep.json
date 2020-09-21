@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1600681401085
+    "lastModifiedOn": 1600681684528
   },
   "creationTag": {
     "versionNumber": 0,
@@ -132,6 +132,10 @@
       },
       {
         "name": "Conversation",
+        "type": "bigint"
+      },
+      {
+        "name": "Flirt",
         "type": "bigint"
       },
       {
