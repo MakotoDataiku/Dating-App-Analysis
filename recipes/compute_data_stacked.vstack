@@ -1,0 +1,111 @@
+{
+  "mode": "UNION",
+  "selectedColumns": [
+    "No.",
+    "Name",
+    "Ethnicity",
+    "Week",
+    "Who liked first",
+    "Lv",
+    "SL",
+    "Date",
+    "Age",
+    "Match",
+    "Reply",
+    "Conversation",
+    "Appointment",
+    "Hand",
+    "Kiss",
+    "Happy",
+    "Cost",
+    "n_mtg",
+    "Cost_of_mtg",
+    "Appointment_date",
+    "m to a days",
+    "App",
+    "City",
+    "Flirt"
+  ],
+  "originColumnName": "original_dataset",
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "Tinder_Paris_May_2020_prep",
+      "index": 0
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "Tinder_Zagreb_Aug_prep",
+      "index": 1
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "Tinder_Lille_Aug_2020_prep",
+      "index": 2
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "Hinge_Paris_Feb_2020_prep",
+      "index": 3
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "originLabel": "BUmble_Paris_Aug_2020_prep",
+      "index": 4
+    }
+  ],
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "addOriginColumn": false
+}
