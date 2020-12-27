@@ -5,6 +5,14 @@
     {
       "objectId": "tinder_scraper",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "tinder_scraper_prepared",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_tinder_scraper_prepared",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
