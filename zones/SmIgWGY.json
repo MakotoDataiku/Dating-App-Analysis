@@ -1,7 +1,12 @@
 {
   "name": "Scraper",
   "color": "#087ABF",
-  "items": [],
+  "items": [
+    {
+      "objectId": "scraped_data",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
