@@ -1,12 +1,7 @@
 {
   "name": "Scraper",
   "color": "#087ABF",
-  "items": [
-    {
-      "objectId": "compute_tinder_scraper_prepared",
-      "objectType": "RECIPE"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},
